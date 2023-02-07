@@ -4,6 +4,7 @@ MAINTAINER Jaroslaw Filiochowski <jarfil@gmail.com>
 
 COPY . /
 
+RUN apt-get update && apt-get install -y apt-transport-https
 RUN apt-get -y update && \
 	apt-get -y upgrade && \
 	apt-get -y install \
